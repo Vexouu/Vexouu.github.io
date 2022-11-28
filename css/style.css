@@ -1,0 +1,824 @@
+
+
+
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-image: url(../img/background.png);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255,0.5);
+}
+
+
+main{
+	flex: 1;
+}
+
+
+
+
+
+
+
+
+
+/* Barre de Navigation */
+
+header{
+	border-bottom: solid;
+	border-color: #008349;
+	padding-bottom: 2%;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	top: 0;
+	position: sticky;
+}
+
+nav{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+#HeaderLogo{
+	width: 10%;
+	height: 100%;
+	text-align: center;
+
+}
+
+
+#HeaderLogo img{
+	text-align: center;
+	width: 60%;
+}
+
+
+#Navigateur{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+	
+#Navigateur ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	gap:7%;
+}
+
+
+#Navigateur li{
+    color : #008349;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+
+#local{
+	text-align: center;
+}
+
+
+.barnav a:visited{
+    color: #008349;
+    text-decoration: none;
+}
+
+
+.barnav a:visited:hover{
+	color: white;
+	text-decoration: none;
+}
+
+
+.barnav a:visited:active{
+	color: white;
+	text-decoration: none;
+}
+
+
+.barnav a:link{
+    text-decoration: none;
+}
+
+
+.barnav a{
+	color: #008349 ;
+}
+
+.barnav a:hover{
+	color: white ;
+}
+
+
+#Navigateur p{
+	font-weight: bold;
+
+}
+
+.login {
+	border: solid;
+	border-color: #008349;
+	background-color:#008349 ;
+	color: white;
+	font-size: 150%;
+	border-radius: 5px;
+	font-weight: bold;
+	}
+
+
+#NavLogin{
+	
+	width: 20%;
+	height: auto;
+	margin-right: 1%;
+}
+
+#NavLogin ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+
+.login a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
+.login a:visited:hover{
+	color: #008349;
+	background-color: white;
+	border-color: white;
+	text-decoration: none;
+}
+
+
+.login a:visited:active{
+	color: #008349;
+	text-decoration: none;
+}
+
+
+.login a:link{
+    text-decoration: none;
+}
+
+
+.login a:hover{
+	color: #008349 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Centre de la page Index */
+main#MainIndex{
+	flex:1;
+	display: flex;
+	align-items: center;
+	
+}
+
+.container#IndContMain{
+	display: flex;
+
+}
+#ContPres{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+#IndContLogoText{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	color: #008349;
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+
+	
+}
+
+#Diapo{
+	width: 50%;
+	margin: 1%;
+}
+
+#Diapo img{
+	width: 100%;
+	height: auto;
+}
+
+#imageDiapo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+
+
+
+.Zoom img{
+	transition: all 1s ease;
+}
+
+.Zoom:hover img {
+transform:scale(1.15);
+}
+
+
+.ZoomDiv{
+	transition: transform 1s ease;
+}
+
+.ZoomDiv:hover{
+	transform:scale(1.15);
+}
+
+
+
+
+
+
+
+
+/*Centre de la page Pres*/
+
+
+main h1{
+	text-align: center;
+}
+
+main#MainPres{
+	flex:1;
+	margin-bottom: 2%;
+}
+
+
+#PresStatus img{
+	width: 15%;
+	height: auto;
+}
+
+
+#PresStatus:hover{
+	border-color: white;
+	color: white;
+}
+
+.container#ContPres{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#BlockVert p{
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+#PresStatus{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 15%;
+	align-items: center;
+	border: solid;
+	border-color: #008349;
+	border-radius: 10px;
+	font-size: 200%;
+	color: #008349;
+	font-weight: bold;
+	width: 20%;
+	margin: auto;
+}
+#PresText{
+	margin: 5%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+}
+#PresText p#PresBureau{
+	color: #D1D1D1;
+	font-size: 200%;
+	text-align: justify;
+}
+#PresText h1{
+	color: white;
+}
+
+#PresText a:link{
+    text-decoration: none;
+}
+#BlockVert{
+	color: white;
+	font-size: 200%;
+	text-align: justify;
+	text-align-last: center;
+	background-color:#008349 ;
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+}
+.border{
+	border-bottom: solid;
+	border-color: #008349;
+}
+
+.Pole{
+	display: flex;
+	flex-direction: column;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.Pole h1{
+	color: white;
+	font-weight: bold;
+	font-size: 200%;
+}
+.Liste{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.Membre{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 150%;
+	color: white;
+}
+
+.Membre img{
+	text-align: center;
+	border-radius: 50%;
+	
+}
+
+.Zoom img{
+	transition: all 1s ease;
+}
+
+.Zoom:hover img {
+transform:scale(1.15);
+}
+
+#Communication{
+	background-color:#008349 ;
+}
+#LAN{
+	background-color: #008349;
+}
+
+
+
+/*Centre de la page Event*/
+
+main#EventMain{
+	flex:1;
+	height: 100%;
+}
+
+
+.EventContain{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 5%;
+	margin-right: 5% ;
+}
+
+
+.EventImageText{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.EventImageText p{
+	margin-left: 10%;
+	margin-right: 10% ;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color:#D1D1D1 ;
+	font-weight: bold;
+	font-size: 150%;
+}
+.EventImageText h1{
+	color: white;
+	font-weight: bold;
+}
+
+.EventText{
+	text-align: justify;
+	text-align-last: center;
+}
+
+.EventIcone{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.EventImage img{
+	max-height:285px ;
+}
+.EventIcone img{
+	
+	max-height: 285px;
+}
+
+
+
+
+.EventContainerDiv{
+	padding-bottom: 10%;
+}
+
+
+.EventContainerDiv h1{
+	color: white;
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+
+#SoirLudi{
+	background-color:#008349; 
+	padding-top: 1%;
+}
+
+
+
+
+
+
+
+
+/*Centre de la page Part*/
+
+main#PartMain{
+	flex: 1;
+}
+
+#PartImage{
+	display: flex;
+	flex-direction: column;
+}
+
+.PartBlock{
+	text-align: center;
+}
+
+.PartBlock td{
+	max-height: 150px;
+}
+
+.PartBlock td img{
+	max-height: 150px;
+}
+table{
+	width: 100%;
+	margin
+}
+
+#PartTex{
+	margin-top: 3%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+#PartTex p{
+	margin-left: 10%;
+	margin-right: 10% ;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	color:#D1D1D1 ;
+	font-weight: bold;
+	font-size: 150%;
+	text-align: justify;
+	text-align-last: center;
+}
+#PartTex h1{
+	color: white;
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+
+#Table2 {
+	margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Centre de la page Contact*/
+main#ContMain{
+	flex: 1;
+	width: 100%;
+}
+
+.ContactDiv:hover{
+	border: solid;
+	border-radius: 10px;
+	border-color: white;
+	text-decoration: none;
+}
+
+#ContactContMain{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.Contactcontainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap : 10%;
+	width: 100%;
+	height: 100%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.ContactDiv{
+	width: 350px;
+	height: 600px;
+	text-align: center;
+	justify-content: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #008349;
+	display: flex;
+	flex-direction: column;
+	font-size: 250%;
+	justify-content: center;
+	gap: 20%;
+	align-items: center;
+	font-weight: bold;
+	
+}
+.ContactDiv img{
+	width: 100%;
+	margin-top: 25%;
+
+}
+.Contactcontainer{
+	width: 100%;
+}
+.ContactImage{
+	width:50% ;
+}
+.ContactText{
+	width: 50%;
+	margin: auto;
+	padding: auto;
+}
+
+.Contactcontainer a:visited{
+    color: #008349;
+    text-decoration: none;
+}
+
+
+.Contactcontainer a:visited:hover{
+	color: white;
+	text-decoration: none;
+}
+
+
+.Contactcontainer a:visited:active{
+	color: white;
+	text-decoration: none;
+}
+
+
+.Contactcontainer a:link{
+    text-decoration: none;
+}
+
+
+.Contactcontainer a{
+	color: #008349 ;
+}
+
+.Contactcontainer a:hover{
+	color: white ;
+}
+
+
+#Navigateur p{
+	font-weight: bold;
+}
+
+#ContactContMainFormulaire{
+	display: flex;
+	text-align: center;
+}
+
+#NousContacterDiv{
+	margin: auto;
+	width: 700px;
+	height: 790px;
+	border: solid;
+	border-radius: 20px;
+	border-color: #008349;
+}
+
+
+.NousContacter{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10%;
+	font-size: 150%;
+	font-weight: bold;
+	color: #008349 ;
+}
+#NousContacterDiv h1{
+	font-size: 300%;
+	font-weight: bold;
+	color: #008349 ;
+}
+
+#ConnexionContainer{
+	margin-top: 5%;
+	margin: auto;
+	width: 700px;
+	height: 500px;
+	border: solid;
+	border-radius: 20px;
+	border-color: #008349;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+#IdentificationContainer{
+	margin-top: 5%;
+	margin: auto;
+	width: 700px;
+	height: 850px;
+	border: solid;
+	border-radius: 20px;
+	border-color: #008349;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+#ContChoice{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+#choice{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	gap: 20%;
+	align-items: center;
+}
+
+#calcul{
+	color: white;
+	margin: 5%;
+	text-align: right;
+	text-align-last: center;
+}
+
+#BDDContainer{
+	color: white;
+}
+
+.input{
+	width: 300px;
+	height: 20px;
+}
+#MessageContact{
+	width: 300px;
+	height: 100px;
+
+}
+
+#ReponseForm{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 100%;
+}
+/*#ButtonEnvoyer{
+	width: 100px;
+	height: 50px;
+	background-color:#008349;
+	color: white;
+	font-weight: bold;
+	font-size: 100%;
+}*/
+#MainConnexion{
+	margin-top: 5%;
+}
+
+
+
+
+
+
+span{
+	color:#008349 ;
+}
+span:hover{
+	cursor: pointer ;
+}
+
+/* Footer */
+
+footer{
+	width: 50%;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#barfoot{
+	align-items: center;
+}
+#barfoot ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+}
+
+
+#barfoot li{
+    color : white;
+    font-weight: bold;
+    font-size: 20px;
+ }
+
+#barfoot img{
+	width: 20%;
+	height: auto;
+}

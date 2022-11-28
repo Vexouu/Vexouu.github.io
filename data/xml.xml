@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group>
+	<adherent>
+		<ID>1</ID>
+		<nom>ZARAGOSA</nom>
+		<prenom>Yoann</prenom>
+	</adherent>
+	<adherent>
+		<ID>2</ID>
+		<nom>MINNE</nom>
+		<prenom>Ewenn</prenom>
+	</adherent>
+	<adherent>
+		<ID>3</ID>
+		<nom>BONALY</nom>
+		<prenom>David</prenom>
+	</adherent>
+	<adherent>
+		<ID>4</ID>
+		<nom>EON</nom>
+		<prenom>Youenn</prenom>
+	</adherent>
+</group>

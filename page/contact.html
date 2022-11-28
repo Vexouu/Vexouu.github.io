@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obi1 - Organisation Brestoise d'Informatique 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../Script/Script.js"></script>
+</head>
+<body>
+		<header>
+			<nav>
+				<div id="HeaderLogo">
+					<a href="../index.html"><img src="../img/obi1.png"></a>
+				</div>
+				<div id="Navigateur">
+					<div class="barnav" id="local"><a href="https://www.google.com/maps/contrib/109555251442731795470/photos/@48.3982953,-4.4970031,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1" target="_blank"><p>📍 6 Av. Victor le Gorgeu Local N-048, 29200 Brest</p></a></div>
+					<div>
+						<ul>
+							<li class="barnav"><a href="../index.html">Acceuil</a></li>
+							<li class="barnav"><a href="presentation.html">Présentation</a></li>
+							<li class="barnav"><a href="event.html">Evenements</a></li>
+							<li  class="barnav"><a href="partenaire.html">Nos partenaires</a></li>
+							<li class="barnav"><a href="contact.html">Contact</a></li>
+						</ul>
+					
+					</div>
+					
+				</div>
+				<div id="NavLogin">
+					<ul>
+						<button class="login" id="Connexion"><a href="connexion.html">Connexion</a></button>
+					</ul>
+				</div>
+			</nav>
+
+		</header>
+
+		<main id="ContMain">
+			<div class="container" id="ContactContMain">
+				<div class="Contactcontainer" id="ContactCont1">
+					
+					<a href="https://discord.gg/t7kfNEntMs" target="_blank" onmouseover=""><div id="Contlocalisation" class="ContactDiv ZoomDiv"><div class="ContactImage"><img src="../img/localisation.png"></div><div class="ContactText">Localisation</div></div></a>
+					
+					<a href="https://discord.gg/t7kfNEntMs" target="_blank" onmouseover=""><div id="ContDiscord" class="ContactDiv ZoomDiv"><div class="ContactImage"><img src="../img/discord.png"></div><div class="ContactText">Discord</div></div></a>
+					
+					<a href="mailto: association.obi1@gmail.com" target="_blank" onmouseover=""><div id="ContMail" class="ContactDiv ZoomDiv"><div class="ContactImage"><img src="../img/mail.png" target="_blank"></div><div class="ContactText">Email</div></div></a>
+
+				</div>
+				<div class="Contactcontainer" id="ContactCont2">
+					
+					<a href="https://instagram.com/asso_obi1?igshid=YmMyMTA2MY=" target="_blank"><div id="ContInsta" class="ContactDiv ZoomDiv"><div class="ContactImage"><img src="../img/insta.png" target="_blank"></div><div class="ContactText">Instagram</div></div></a>
+					
+					<a href="https://www.facebook.com/assoOBI1" target="_blank" onmouseover=""><div id="ContFacebook" class="ContactDiv ZoomDiv"><div class="ContactImage"><img src="../img/facebook.png"></div><div class="ContactText">Facebook</div></div></a>
+					
+					<a href="https://twitter.com/AssociationOBI1" target="_blank" onmouseover=""><div id="ContTwitter" class="ContactDiv ZoomDiv"><div class="ContactImage"><img src="../img/twitter.png"></div><div class="ContactText">Twitter</div></div></a>
+
+				</div>
+				<div class="Contactcontainer" id="ContactCont3">
+					
+					<a href="https://www.twitch.tv/obi_lan" target="_blank" onmouseover=""><div id="ContTwitch" class="ContactDiv ZoomDiv"><div class="ContactImage"><img src="../img/twitch.png"></div><div class="ContactText">Twitch</div></div></a>
+					
+					<a href="https://obilan.net/" target="_blank" onmouseover=""><div id="ContObilan" class="ContactDiv ZoomDiv"><div class="ContactImage"><img src="../img/iconeObilan.png" target="_blank"></div><div class="ContactText">Obi Lan</div></div></a>
+				</div>
+
+			</div>
+			<div class="container" id="ContactContMainFormulaire">
+				<form id="NousContacterDiv">
+					<h1>Nous Contacter</h1>
+					<table>
+						<tr class="NousContacter">
+							<td><label>Nom : </label></td>
+							<td><input type="text" placeholder="Nom..." class="input" id="nom" required></td>
+						</tr>
+						<tr class="NousContacter">
+							<td><label>Prenom : </label></td>
+							<td><input type="text" placeholder="Prénom..." class="input" id="prenom" required></td>
+						</tr>
+						<tr class="NousContacter">
+							<td><label>Email : </label></td>
+							<td><input type="text" placeholder="Toto@email.com" class="input" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="email" required></td>
+						</tr>
+						<tr class="NousContacter">
+							<td><label>Téléphone : </label></td>
+							<td><input type="tel" placeholder="07.82.91.44.17" class="input" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}" id="tel" required></td>
+						</tr>
+						<tr class="NousContacter">
+							<td><label>Message : </label></td>
+							<td><input type="text" placeholder="Message ..." class="input" id="MessageContact" required></td>
+						</tr>
+						<tr>
+							<td><input type="submit"  id="ButtonEnvoyer" onsubmit="formulaire()" value="Enoyer" formtarget="_blank"></td>
+						</tr>
+					</table>
+				</form>
+				
+			</div>
+			<div id="ReponseForm">
+					
+			</div>	
+		</main>
+		
+
+
+
+		<footer>
+			<div id="barfoot">
+				<ul>
+					<li class="Zoom">
+						<a href="https://www.facebook.com/assoOBI1" target="_blank">
+							<img src="../img/facebook.png" id="facebook" onmouseover="FacebookB()" onmouseleave="FacebookB()">
+						</a>
+					</li>
+					<li class="Zoom">
+						<a href="https://discord.gg/t7kfNEntMs" target="_blank">
+							<img src="../img/discord.png" id="discord" onmouseover="DiscordB()" onmouseleave="DiscordB()">
+						</a>
+					</li>
+					<li class="Zoom">
+						<a href="https://instagram.com/asso_obi1?igshid=YmMyMTA2MY=">
+							<img src="../img/insta.png" target="_blank" id="insta" onmouseover="InstaB()" onmouseleave="InstaB()">
+						</a>
+					</li>
+					<li class="Zoom">
+						<a href="https://twitter.com/AssociationOBI1" target="_blank">
+							<img src="../img/twitter.png" id="twitter" onmouseover="TwitterB()" onmouseleave="TwitterB()">
+						</a>
+					</li>
+					<li class="Zoom">
+						<a href="https://www.twitch.tv/obi_lan" target="_blank" >
+							<img src="../img/twitch.png" id="twitch" onmouseover="TwitchB()" onmouseleave="TwitchB()">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	
+</body>
+</html>

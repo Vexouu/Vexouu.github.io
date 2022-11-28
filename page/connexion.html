@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obi1 - Organisation Brestoise d'Informatique 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../Script/Script.js"></script>
+</head>
+<body>
+		<header>
+			<nav>
+				<div id="HeaderLogo">
+					<a href="../index.html"><img src="../img/obi1.png"></a>
+				</div>
+				<div id="Navigateur">
+					<div class="barnav" id="local"><a href="https://www.google.com/maps/contrib/109555251442731795470/photos/@48.3982953,-4.4970031,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1" target="_blank"><p>📍 6 Av. Victor le Gorgeu Local N-048, 29200 Brest</p></a></div>
+					<div>
+						<ul>
+							<li class="barnav"><a href="../index.html">Acceuil</a></li>
+							<li class="barnav"><a href="presentation.html">Présentation</a></li>
+							<li class="barnav"><a href="event.html">Evenements</a></li>
+							<li  class="barnav"><a href="partenaire.html">Nos partenaires</a></li>
+							<li class="barnav"><a href="contact.html">Contact</a></li>
+						</ul>
+					
+					</div>
+					
+				</div>
+				<div id="NavLogin">
+					<ul>
+						<button class="login" id="Connexion"><a href="connexion.html">Connexion</a></button>
+					</ul>
+				</div>
+			</nav>
+
+		</header>
+
+
+
+
+
+
+
+		<main id="MainConnexion">
+			<div id="jaiplusdenomenstock">
+				<div id="ConnexionContainer">
+					<h1>Connexion</h1>
+					<table>
+						<tr class="NousContacter">
+							<td><label>Email : </label></td>
+							<td><input type="text" placeholder="Toto@email.com" class="input" id="mail" required pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}"></td>
+						</tr>
+						<tr class="NousContacter">
+							<td><label>Mot De Passe : </label></td>
+							<td><input type="password" placeholder="Mot De Passe" class="input" id="motdepasse" required></td>
+						</tr>
+					</table>
+					<input type="submit"  value="Se connecter" id="ButtonEnvoyer" onclick="checkidentif()" >
+					<p>Si vous n'avez pas de compte, <span onclick="identification()" cursor>Identifiez</span> vous</p>
+				</div>	
+			</div>
+		</main>
+
+
+
+
+
+
+
+
+
+		<footer>
+			<div id="barfoot">
+				<ul>
+					<li class="Zoom">
+						<a href="https://www.facebook.com/assoOBI1" target="_blank">
+							<img src="../img/facebook.png" id="facebook" onmouseover="FacebookB()" onmouseleave="FacebookB()">
+						</a>
+					</li>
+					<li class="Zoom">
+						<a href="https://discord.gg/t7kfNEntMs" target="_blank">
+							<img src="../img/discord.png" id="discord" onmouseover="DiscordB()" onmouseleave="DiscordB()">
+						</a>
+					</li>
+					<li class="Zoom">
+						<a href="https://instagram.com/asso_obi1?igshid=YmMyMTA2MY=">
+							<img src="../img/insta.png" target="_blank" id="insta" onmouseover="InstaB()" onmouseleave="InstaB()">
+						</a>
+					</li>
+					<li class="Zoom">
+						<a href="https://twitter.com/AssociationOBI1" target="_blank">
+							<img src="../img/twitter.png" id="twitter" onmouseover="TwitterB()" onmouseleave="TwitterB()">
+						</a>
+					</li>
+					<li class="Zoom">
+						<a href="https://www.twitch.tv/obi_lan" target="_blank" >
+							<img src="../img/twitch.png" id="twitch" onmouseover="TwitchB()" onmouseleave="TwitchB()">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	
+</body>
+</html>
