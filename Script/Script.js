@@ -277,12 +277,23 @@ function calcul(){
 function checkidentif(){
     let mdp = document.getElementById("motdepasse").value
     let email = document.getElementById("mail").value
-
-    if ((mdp!="")&&(mail!="")){
-        bdd();
+    let regpex = /[^@\s]+@[^@\s]+\.[^@\s]+/;
+    if ((mdp!="")&&(email!="")){
+        if (regpex.test(email)){
+            if (mdp!=""){
+                bdd();
+            }
+            else{
+                alert("Il faut rentrer un mot de passe")
+            }
+            
+        }
+        else {
+            alert("Mauvais format d'email, essayez le format suivant: toto@gmail.com");
+        }
     }
-    else {
-        alert("vous devez rentrer des valeurs dans les champs");
+    else{
+        alert("Veuillez remplir les champs nécessaires");
     }
 }
 
