@@ -227,14 +227,14 @@ function formulaire(){
         if (regpex.test(email)){
             regpex = /[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}/;
             if (regpex.test(tel)){
-                balise.innerHTML = "Merci "+prenom+" "+nom+"pour le message suivant<br>"+message+"<br>Nous vous contacterons grâce à vos coordonée ci dessous<br>Email: "+email+"<br>Téléphone: "+tel;
+                balise.innerHTML = "Merci "+prenom+" "+nom+" pour le message suivant<br>"+message+"<br>Nous vous contacterons grâce à vos coordonée ci dessous<br>Email: "+email+"<br>Téléphone: "+tel;
             }
             else{
                 alert ("Mauvais format de téléphone, essayez le format suivant: 07.82.91.44.17")
             }
         }
         else{
-            alertéé ("Mauvais format d'email, essayez le format suivant: toto@gmail.com")
+            alert ("Mauvais format d'email, essayez le format suivant: toto@gmail.com")
         }
     }
     else{
@@ -412,10 +412,10 @@ function add(){
     let xmlDoc = xmlhttp.responseXML;
     let books = xmlDoc.getElementsByTagName("adherent");
     let tblBook = document.getElementById("tblBook")
-    let book = xmlDoc.createElement("BOOK");    
+    let book = xmlDoc.createElement("adherent");    
     let id = xmlDoc.createElement("ID");
-    let title = xmlDoc.createElement("TITLE");
-    let author = xmlDoc.createElement("AUTHOR");
+    let title = xmlDoc.createElement("nom");
+    let author = xmlDoc.createElement("prenom");
     let txtTitle = document.getElementById("txtTitle");
     let txtAuthor = document.getElementById("txtAuthor");
 
