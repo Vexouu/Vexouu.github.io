@@ -230,17 +230,17 @@ main#MainIndex{
 	
 }
 
-#Diapo{
+.Diapo{
 	width: 50%;
 	margin: 1%;
 }
 
-#Diapo img{
+.Diapo img{
 	width: 100%;
 	height: auto;
 }
 
-#imageDiapo{
+.imageDiapo{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -249,8 +249,13 @@ main#MainIndex{
 }
 
 
-
-
+#BoutonDiapo{
+	display: flex;
+}
+#BoutonDiapo button{
+	background-color: #008349;
+	border-color: transparent;
+}
 
 .Zoom img{
 	transition: all 1s ease;

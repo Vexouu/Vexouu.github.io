@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script src="../Script/Script.js"></script>
 </head>
-<body>
+<body onload="displaySlide2()">
 		<header>
 			<nav>
 				<div id="HeaderLogo">
@@ -47,8 +47,25 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
 							</div>
-							<div class="EventImage Zoom">
-								<a href="https://obilan.net/" target="_blank"><img src="../img/obilan.jpg" ></a>
+							<div class="Diapo">
+								<div class="imageDiapo">
+									<div class="slide Zoom">
+										<img src="../img/image4.jpg" width="100%">
+									</div>
+									<div class="slide Zoom">
+										<img src="../img/image5.jpg" width="100%">
+									</div>
+									<div class="slide Zoom">
+										<img src="../img/image6.jpg" width="100">
+									</div>
+								</div>
+								<div id="BoutonDiapo">
+									<button class="buttondiapo" id="NavGauche" onclick="Previous()"><img src="../img/previous.svg"></button>
+									<button class="buttondiapo" id="img4" onclick="showImage2(0)"><img src="../img/image4.jpg"></button>
+									<button class="buttondiapo" id="img5" onclick="showImage2(1)"><img src="../img/image5.jpg"></button>
+									<button class="buttondiapo" id="img6" onclick="showImage2(2)"><img src="../img/image6.jpg"></button>
+									<button class="buttondiapo" id="NavDroite" onclick="Next()"><img src="../img/next.svg"></button>
+								</div>
 							</div>
 						</div>
 						<div class="EventIcone">

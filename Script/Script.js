@@ -7,10 +7,15 @@ function showImage(n) {
    displaySlide();
 }
 
+function showImage2(n) {
+   sIndex=n;
+   displaySlide2();
+}
+
 
 function myMove() {  
     displaySlide();
-    id = setInterval(displaySlide, 5000);            
+    id = setInterval(displaySlide, 2000);            
 }
 
 
@@ -35,6 +40,46 @@ function displaySlide() {
     sIndex++;
 }
 
+function displaySlide2(){
+    let i=0;
+    let slide = document.getElementsByClassName("slide");
+
+    if (sIndex >= slide.length) {
+        sIndex = 0;
+    }
+
+    if (sIndex < 0) {
+        sIndex = slide.length - 1;
+    }
+
+    for (i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+    }
+
+    slide[sIndex].style.display = "block";
+}
+
+
+function Previous(){
+    if (sIndex ==0){
+        sIndex=2;
+    }
+    else{
+        sIndex=sIndex-1
+    }
+    displaySlide2();
+}
+
+
+function Next(){
+    if (sIndex ==2){
+        sIndex=0;
+    }
+    else{
+        sIndex=sIndex+1
+    }
+    displaySlide2();
+}
 
 function IndexFacebookB(){
     let image = document.getElementById("facebook")
@@ -177,8 +222,24 @@ function formulaire(){
     let tel = document.getElementById("tel").value;
     let message = document.getElementById("MessageContact").value;
     let balise = document.getElementById("ReponseForm");
-
-    balise.innerHTML = "Merci "+prenom+" "+nom+"pour le message suivant<br>"+message+"<br>Nous vous contacterons grâce à vos coordonée ci dessous<br>Email: "+email+"<br>Téléphone: "+tel;
+    let regpex = /[^@\s]+@[^@\s]+\.[^@\s]+/;
+    if ((nom!="")&&(prenom!="")&&(email!="")&&(tel!="")&&(message!="")){
+        if (regpex.test(email)){
+            regpex = /[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}/;
+            if (regpex.test(tel)){
+                balise.innerHTML = "Merci "+prenom+" "+nom+"pour le message suivant<br>"+message+"<br>Nous vous contacterons grâce à vos coordonée ci dessous<br>Email: "+email+"<br>Téléphone: "+tel;
+            }
+            else{
+                alert ("Mauvais format de téléphone, essayez le format suivant: 07.82.91.44.17")
+            }
+        }
+        else{
+            alertéé ("Mauvais format d'email, essayez le format suivant: toto@gmail.com")
+        }
+    }
+    else{
+        alert("Veuillez remplir les champs nécessaires")
+    }
 
 }
 
@@ -373,4 +434,100 @@ function add(){
         group.appendChild(book);
 
          fetchData();
+}
+
+function ContactLocalisation(){
+    let image = document.getElementById("ContactLocalisation")
+    if (i==0){
+        image.src = "../img/localisationB.png"
+        i=1;
+    }
+    else{
+        image.src = "../img/localisation.png"
+        i=0;
+    }   
+}
+
+function ContactDiscord(){
+    let image = document.getElementById("ContactDiscord")
+    if (i==0){
+        image.src = "../img/discordB.png"
+        i=1;
+    }
+    else{
+        image.src = "../img/discord.png"
+        i=0;
+    }  
+}
+
+function ContactMail(){
+    let image = document.getElementById("ContactMail")
+    if (i==0){
+        image.src = "../img/mailB.png"
+        i=1;
+    }
+    else{
+        image.src = "../img/mail.png"
+        i=0;
+    } 
+}
+
+function ContactInsta(){
+    let image = document.getElementById("ContactInsta")
+    if (i==0){
+        image.src = "../img/instaB.png"
+        i=1;
+    }
+    else{
+        image.src = "../img/insta.png"
+        i=0;
+    } 
+}
+
+function ContactFacebook(){
+    let image = document.getElementById("ContactFacebook")
+    if (i==0){
+        image.src = "../img/facebookB.png"
+        i=1;
+    }
+    else{
+        image.src = "../img/facebook.png"
+        i=0;
+    } 
+}
+
+function ContactTwitter(){
+    let image = document.getElementById("ContactTwitter")
+    if (i==0){
+        image.src = "../img/twitterB.png"
+        i=1;
+    }
+    else{
+        image.src = "../img/twitter.png"
+        i=0;
+    } 
+}
+
+function ContactTwitch(){
+    let image = document.getElementById("ContactTwitch")
+    if (i==0){
+        image.src = "../img/twitchB.png"
+        i=1;
+    }
+    else{
+        image.src = "../img/twitch.png"
+        i=0;
+    } 
+}
+
+function ContactObilan(){
+    let image = document.getElementById("ContactObilan")
+    if (i==0){
+        image.src = "../img/iconeObilanB.png"
+        i=1;
+    }
+    else{
+        image.src = "../img/iconeObilan.png"
+        i=0;
+    } 
 }
