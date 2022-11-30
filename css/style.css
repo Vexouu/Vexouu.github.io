@@ -6,6 +6,9 @@
 html {
 	font-family: coolvetica;
 }
+html img{
+	color: white;
+}
 body{
 	margin: 0;
 	display: flex;
@@ -296,7 +299,7 @@ main h1{
 
 main#MainPres{
 	flex:1;
-	margin-bottom: 2%;
+	margin-bottom: 3%;
 }
 
 
@@ -337,16 +340,22 @@ main#MainPres{
 	
 	width: 20%;
 	margin: auto;
+	margin-bottom: 2%;
 }
 #PresText{
 	margin: 5%;
 	padding-bottom: 1%;
 	padding-top: 1%;
 }
-#PresText p#PresBureau{
+
+
+#PresBureau{
 	color: #D1D1D1;
 	font-size: 200%;
+
 	text-align: justify;
+	text-align-last: center;
+	margin-bottom: 3%;
 }
 #PresText h1{
 	font-weight: normal;
@@ -590,7 +599,14 @@ main#ContMain{
 	flex: 1;
 	width: 100%;
 }
-
+iframe{
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border: solid;
+	border-color:#008349;
+	border-radius: 10px;
+}
 .ContactDiv:hover{
 	border: solid;
 	border-radius: 10px;
@@ -694,10 +710,11 @@ main#ContMain{
 #NousContacterDiv{
 	margin: auto;
 	width: 700px;
-	height: 790px;
+	height: 850px;
 	border: solid;
 	border-radius: 20px;
 	border-color: #008349;
+	margin-bottom: 5%;
 }
 
 
