@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "coolvetica";
+  src: url("../data/coolvetica rg.otf");
+}
 
-
-
+html {
+	font-family: coolvetica;
+}
 body{
 	margin: 0;
 	display: flex;
@@ -80,7 +85,7 @@ nav{
 
 #Navigateur li{
     color : #008349;
-    font-weight: bold;
+    
     font-size: 150%;
 }
 
@@ -123,7 +128,7 @@ nav{
 
 
 #Navigateur p{
-	font-weight: bold;
+	
 
 }
 
@@ -134,7 +139,7 @@ nav{
 	color: white;
 	font-size: 150%;
 	border-radius: 5px;
-	font-weight: bold;
+	
 	}
 
 
@@ -224,7 +229,7 @@ main#MainIndex{
 	width: 50%;
 	color: #008349;
 	font-size: 200%;
-	font-weight: bold;
+	
 	text-align: center;
 
 	
@@ -285,6 +290,7 @@ transform:scale(1.15);
 
 
 main h1{
+	font-weight: normal;
 	text-align: center;
 }
 
@@ -328,7 +334,7 @@ main#MainPres{
 	border-radius: 10px;
 	font-size: 200%;
 	color: #008349;
-	font-weight: bold;
+	
 	width: 20%;
 	margin: auto;
 }
@@ -343,6 +349,7 @@ main#MainPres{
 	text-align: justify;
 }
 #PresText h1{
+	font-weight: normal;
 	color: white;
 }
 
@@ -373,8 +380,9 @@ main#MainPres{
 }
 
 .Pole h1{
+	font-weight: normal;
 	color: white;
-	font-weight: bold;
+	
 	font-size: 200%;
 }
 .Liste{
@@ -391,7 +399,7 @@ main#MainPres{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-weight: bold;
+	
 	font-size: 150%;
 	color: white;
 }
@@ -453,12 +461,13 @@ main#EventMain{
 	margin-top: 5%;
 	margin-bottom: 5%;
 	color:#D1D1D1 ;
-	font-weight: bold;
+	
 	font-size: 150%;
 }
 .EventImageText h1{
+	font-weight: normal;
 	color: white;
-	font-weight: bold;
+	
 }
 
 .EventText{
@@ -490,6 +499,7 @@ main#EventMain{
 
 
 .EventContainerDiv h1{
+	font-weight: normal;
 	color: white;
 	margin-top: 3%;
 	margin-bottom: 5%;
@@ -546,12 +556,13 @@ table{
 	margin-top: 4%;
 	margin-bottom: 4%;
 	color:#D1D1D1 ;
-	font-weight: bold;
+	
 	font-size: 150%;
 	text-align: justify;
 	text-align-last: center;
 }
 #PartTex h1{
+	font-weight: normal;
 	color: white;
 	margin-top: 3%;
 	margin-bottom: 5%;
@@ -619,7 +630,7 @@ main#ContMain{
 	justify-content: center;
 	gap: 20%;
 	align-items: center;
-	font-weight: bold;
+	
 	
 }
 .ContactDiv img{
@@ -672,7 +683,7 @@ main#ContMain{
 
 
 #Navigateur p{
-	font-weight: bold;
+	
 }
 
 #ContactContMainFormulaire{
@@ -697,12 +708,13 @@ main#ContMain{
 	align-items: center;
 	margin: 10%;
 	font-size: 150%;
-	font-weight: bold;
+	
 	color: #008349 ;
 }
 #NousContacterDiv h1{
+	font-weight: normal;
 	font-size: 300%;
-	font-weight: bold;
+	
 	color: #008349 ;
 }
 
@@ -715,7 +727,7 @@ main#ContMain{
 	border-radius: 20px;
 	border-color: #008349;
 	text-align: center;
-	font-weight: bold;
+	
 	color: white;
 }
 
@@ -728,7 +740,7 @@ main#ContMain{
 	border-radius: 20px;
 	border-color: #008349;
 	text-align: center;
-	font-weight: bold;
+	
 	color: white;
 }
 
@@ -770,7 +782,7 @@ main#ContMain{
 #ReponseForm{
 	text-align: center;
 	color: white;
-	font-weight: bold;
+	
 	font-size: 100%;
 }
 /*#ButtonEnvoyer{
@@ -778,7 +790,7 @@ main#ContMain{
 	height: 50px;
 	background-color:#008349;
 	color: white;
-	font-weight: bold;
+	
 	font-size: 100%;
 }*/
 #MainConnexion{
@@ -819,7 +831,7 @@ footer{
 
 #barfoot li{
     color : white;
-    font-weight: bold;
+    
     font-size: 20px;
  }
 
